@@ -236,10 +236,12 @@ header#site_head {
 }
 
 #main_content p {
+	font-size: 22px;
   margin-top: 0em;
   margin-bottom: 2em;
   text-align:justify;
 }
+
 
 #main_content h2 {
   margin-top: 0em;
