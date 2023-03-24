@@ -1,0 +1,79 @@
+---
+layout: default
+title: Crane Robot Control
+---
+
+
+
+<header class="content_title">
+<h1>How to control this crane robot and safely?</h1>
+</header>
+
+<div>
+<h2>Controlling a robot can be complex. We aimed to simplify the factors and enable the children to have a feeling about the factors on how to control a robot. 
+We introduced traditional controlling methods, and machine learning methods, such as voice control and image control. 
+We took the children through the process of setting those control methods up, therefore, they also observed and experienced the influential issues and the complexity.
+We finally wrapped up with discussions with the children to understand their thoughts on the control methods and factors.</h2>
+</div>
+
+<div class="row">
+
+
+  <div class="column">
+  
+    <img src="../images/BuildingCraneRobotFromScrach.jpg" alt="Building the crane robot from scrach" style="width:100%; border-radius: 10%; aspect-ratio: 2 / 2.5;">
+	<p style="text-align: center">Building the crane robot from scrach</p>
+	
+  </div>
+  <div class="column">
+  
+    <img src="../images/BuildingGraspingFingers.jpg" alt="Building the grasping fingers for the robot" style="width:100%; border-radius: 10%; aspect-ratio: 2 / 2.5;">
+	<p style="text-align: center">Building the grasping fingers for the robot</p>
+	
+  </div>
+  <div class="column">
+  
+    <img src="../images/GraspingFingersBeingAbleToGrip.jpg" alt="The grasping fingers that are able to grip" style="width:100%; border-radius: 10%; aspect-ratio: 2 / 2.5;">
+	<p style="text-align: center">The grasping fingers that are able to grip</p>
+	
+  </div>
+  <div class="column">
+  
+    <img src="../images/ChargingCraneRobot.jpg" alt="Charging the crane robot" style="width:100%; border-radius: 10%; aspect-ratio: 2 / 2.5;">
+	<p style="text-align: center">Charging the crane robot</p>
+	
+  </div>
+  <div class="column">
+  
+    <img src="../images/CraneRobot.png" alt="The completed crane robot" style="width:100%; border-radius: 10%; aspect-ratio: 2 / 2.5;">
+	<p style="text-align: center">The completed crane robot</p>
+	
+  </div>
+  
+  
+  
+</div>
+
+<div>
+<p><b>How to control this crane robot and safely? </b> was an activity that was based on two more complex Lego crane robots. Controlling robots can be complex. We simplified the question down to a simple decision making process. Our intention was to engage the children in understanding how to control a robot in a machine learning way. We designed a discussion at the end of this activity on the children's preferences about the control methods of robots between traditional methods and machine learning methods.
+ </p>
+<p>We designed a crane robot with Lego and produced a replicate of it, so the children can engage with the activity in two groups. The crane robots can pick up a color Lego block and put it into two different trays, locating left or right to the robots. We first coded it in a traditional control method embodied by a button. When the button is pressed, the crane will sort the color blocks to the different trays according to their colors. We coded to put red color blocks to the left tray (with a red sign) and all the other color blocks to the right tray (with a black sign).
+</p>
+<p>When the program starts, the robot resets itself to a state in that the robot arm is in the lower position and the grasping fingers are open meaning the robot is ready to take a color block. When a color block is put into the middle area of the fingers, the color sensor above the fingers will recognize the color. In the traditional control method's logic, when the button on the top of the crane is pressed, the crane will decide which tray this color block should go to and trigger a sequence of actions to actually do it. The grasping fingers will close and therefore grasp the color block and hold it. The robot arm will then raise up with the color block to the higher position and turn to left or right accordingly to the air above one of the trays. Next, the robot arm will low down to the lower position where the color block is put in the center of the tray. Then grasping fingers will open and release the color block. The robot arm will raise up again and turn back to the initial position and low down itself and the grasping fingers will keep open so that the robot is ready for the next color block.
+</p>
+<p>We then introduced machine learning method to replace the traditional control method in the decision making process of the robot arm to go to the left tray or the right tray. We implemented both image control and voice control. In the image control method, a machine learning model was trained by an arrow image pointing to the left or right to replace the button command. A background image class could be also included in the model to distinguish the environment image from the arrows. In the voice control method, another machine learning model was trained by voices that the children shouting "left" or "right" to the robot and a background voice class.
+</p>
+<p>To simulate the emergency scenario in real life, we also implemented a feature to stop or start the machine learning predictions. When the machine learning predictions are both triggered by the environment, which typically happens to the voice control method, both direction's decisions begin to interfere with each other. At this moment, a yellow color block showing to the color sensor will stop the robot from predictions, therefore, calm down the robot. The Lego's motor's angles might change significantly that need to be adjusted accordingly. A green color block can resume the robot's predictions.
+</p>
+</div>
+
+<div class="eduentry">
+<degreeheader>
+<table class="fromtodate " width="100" border="0"><tr><td><b>Downloads</b></td></tr></table>
+<a href="../downloads/worksheet-craneRobotControl.docx">Crane robot control worksheet;</a>
+<a href="../downloads/CraneRobotControlForTASSpikeLego.lms">Crane robot code for Lego hub 1;</a>
+<a href="../downloads/CraneRobotControlForNewHubLego.lms">Crane robot code for Lego hub 2.</a>
+
+</degreeheader>
+</div>
+

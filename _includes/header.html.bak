@@ -1,0 +1,25 @@
+
+  <header id="site_head"><!--useful to create the 960px limit-->
+    <div class="header_cont">
+
+          <div id="imlogo">
+            <a href="index.html"><img src="{{ site.baseurl }}/images/ISA-Logo.jpg" width="440" height="120" alt="ISA Logo"></a>
+          </div>
+
+         
+
+          <nav class="head_nav">
+            <ul>
+              <li {% if page.title == "Home" %}class="active"{% else %}class="cv"{% endif %}><a href="{{ site.baseurl }}/index.html">Home</a></li>
+              <li {% if page.title == "Zombie Escape" %}class="active"{% else %}class="cv"{% endif %}><a href="{{ site.baseurl }}/zombies.html">Zombie Escape</a></li>
+              <li {% if page.title == "Quick Draw" %}class="active"{% else %}class="cv"{% endif %}><a href="{{ site.baseurl }}/quickDraw.html">Quick Draw</a></li>
+              <li {% if page.title == "Recognise A Pose" %}class="active"{% else %}class="cv"{% endif %}><a href="{{ site.baseurl }}/poseRecogonization.html">Recognise A Pose</a></li>
+              <li {% if page.title == "Guess the Sequence" %}class="active"{% else %}class="cv"{% endif %}><a href="{{ site.baseurl }}/LegoSequenceGame.html">Guess the Sequence</a></li>
+              <li {% if page.title == "Crane Robot Control" %}class="active"{% else %}class="cv"{% endif %}><a href="{{ site.baseurl }}/CraneRobot.html">Crane Robot Control</a></li>
+			  <li {% if page.title == "Related Resources" %}class="active"{% else %}class="cv"{% endif %}><a href="{{ site.baseurl }}/RelatedResources.html">Related Resources</a></li>
+			  <li {% if page.title == "About" %}class="active"{% else %}class="cv"{% endif %}><a href="{{ site.baseurl }}/About.html">About</a></li>
+			  
+            </ul>
+          </nav>
+    </div>
+  </header>
